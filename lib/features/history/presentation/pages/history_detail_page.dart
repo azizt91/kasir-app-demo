@@ -5,7 +5,6 @@ import '../../../../core/services/printer_service.dart';
 import '../../../../core/utils/receipt_builder.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../bloc/history_bloc.dart';
 import 'package:mobile_app/core/theme/app_colors.dart';
 import 'package:mobile_app/features/auth/presentation/bloc/auth_bloc.dart';

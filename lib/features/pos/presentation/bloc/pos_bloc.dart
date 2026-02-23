@@ -281,7 +281,11 @@ class PosBloc extends Bloc<PosEvent, PosState> {
     };
     
     final apiData = {
-      'items': itemsList.map((e) => {'product_id': e['product_id'], 'quantity': e['quantity']}).toList(),
+      'items': itemsList.map((e) => {
+        'product_id': e['product_id'], 
+        'quantity': e['quantity'],
+        'product_name': e['product_name']
+      }).toList(),
       'payment_method': event.paymentMethod,
       'amount_paid': event.amountPaid,
       'customer_name': event.customerName,
